@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="sucesso.html" method="post" id="matricula" onsubmit="realizarMatricula(event)">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <label for="nome">Nome do Aluno:</label>
+        <input type="text" id="nome" name="nome" maxlength="50" placeholder="Maximo 50 caracteres" required>
+        
+        <br>
+
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data" required>
+
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+
+        <br>
+
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="tel" maxlength="10" placeholder="XXXXX-XXXX" required>
+
+        <br>
+
+        <label for="DDD">DDD:</label>
+        <input class="ddd" type="tel" id="ddd" name="ddd" maxlength="2" placeholder="XX" required>
+        
+        <br>
+
+        </fieldset>
+        <br>
+            <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="serie">Série:</label>
+        <select id="serie" name="serie" required>
+            <option value="1°">1° Ano do Esino Médio</option>
+            <option value="2°">2° Ano do Esino Médio</option>
+            <option value="3°">3° Ano do Esino Médio</option>
+            <option value="4°">4° Ano do Esino Médio</option>
+        </select>
+        <br>
+        <br> 
+        <label for="turno" class="turno">Turno Preferencial</label>
+        <br>
+
+        <label class="manha" for="manha">Manhã</label>
+        <input type="radio" id="turno" name="turno" required>
+
+        <label for="tarde">Tarde</label>
+        <input  type="radio" id="turno" name="turno" required>
+
+        <label for="noite">Noite</label>
+        <input type="radio" id="turno" name="turno" required>
+
+        <br>
+        <br>
+
+        <label for="atividades" class="atvd">Atividades extra-curriculares</label>
+        <br>
+        
+        <label for="teatro">Teatro</label>
+        <input type="checkbox" class="extra" name="extra" >
+        
+        <br>
+
+        <label for="musica">Musica</label>
+        <input type="checkbox" class="extra"   name="extra" >
+
+        <br>
+
+        <label for="ballet">Ballet</label>
+        <input type="checkbox" class="extra"  name="extra" >
+        
+        <br>
+        
+        <label for="pintura">Pintura</label>
+        <input type="checkbox" class="extra"  name="extra" >
+        
+        <br>
+        
+        <label for="judo">Judô</label>
+        <input type="checkbox" class="extra"  name="extra" >
+       
+        <br>
+
+        <label for="futebol">Futebol</label>
+        <input type="checkbox" class="extra"  name="extra" >
+        
+        <br>
+        
+        <label for="nenhum">Nenhuma das Opções</label>
+        <input type="checkbox" class="extra"  id="extra" name="extra">
+    </fieldset>
+        <br>
+        <br>
+        <div class="enviar">
+        <input type="submit" value="enviar">
+    </div>
+        
+    </form>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
